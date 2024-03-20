@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu du restaurant</title>
+    <link rel="stylesheet" href="style menu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Menu du restaurant</h1>
+        <div class="category-icons">
+            <div class="category-icon" onclick="toggleCategory('entrees')">
+                <img src="entree.jpg" alt="Entrées">
+                <p>Entrées</p>
+            </div>
+            <div class="category-icon" onclick="toggleCategory('plats_principaux')">
+                <img src="steak_frites.jpg" alt="Plats principaux">
+                <p>Plats principaux</p>
+            </div>
+            <div class="category-icon" onclick="toggleCategory('fruits_de_mer')">
+                <img src="plateau_fruits_de_mer.jpg" alt="Fruits de mer">
+                <p>Fruits de mer</p>
+            </div>
+            <div class="category-icon" onclick="toggleCategory('hamburgers')">
+                <img src="burger_classique.jpg" alt="Hamburgers">
+                <p>Hamburgers</p>
+            </div>
+            <div class="category-icon" onclick="toggleCategory('pizzas')">
+                <img src="pizza_margherita.jpg" alt="Pizzas">
+                <p>Pizzas</p>
+            </div>
+            <div class="category-icon" onclick="toggleCategory('desserts')">
+                <img src="dessert.jpg" alt="Desserts">
+                <p>Desserts</p>
+            </div>
+            <div class="category-icon" onclick="toggleCategory('boissons')">
+                <img src="boisson.jpg" alt="Boissons">
+                <p>Boissons</p>
+            </div>
+        </div>
+        
+        <div class="menu" id="entrees">
+            <ul>
+                <li class="menu-item">
+                    <img src="salade cesar.jpg" alt="Salade César">
+                    <p>Salade César</p>
+                    <p class="price">$8</p>
+                </li>
+                <li class="menu-item">
+                    <img src="bruschetta.jpg" alt="Bruschetta">
+                    <p>Bruschetta</p>
+                    <p class="price">$6</p>
+                </li>
+                <li class="menu-item">
+                    <img src="escargots.jpg" alt="Escargots">
+                    <p>Escargots</p>
+                    <p class="price">$12</p>
+
+                </li>
+                <li class="menu-item">
+                    <img src="caprese.jpg" alt="Caprese">
+                    <p>Caprese</p>
+                    <p class="price">$9</p>
+                </li>
+                <li class="menu-item">
+                    <img src="antipasto.jpg" alt="Antipasto">
+                    <p class="price">$10</p>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="menu" id="plats_principaux">
+            <ul>
+                <li class="menu-item">
+                    <p>Pizza Margherita</p>
+                    <img src="pizza_margherita.jpg" alt="Pizza Margherita">
+                    <p class="price">$12</p>
+                </li>
+                <li class="menu-item">
+                    <p>Pâtes Carbonara</p>
+                    <img src="pates_carbonara.jpg" alt="Pâtes Carbonara">
+                    <p class="price">$14</p>
+                </li>
+                <li class="menu-item">
+                    <p>Burger classique</p>
+                    <img src="burger_classique.jpg" alt="Burger classique">
+                    <p class="price">$10</p>
+                </li>
+                <li class="menu-item">
+                    <p>Steak frites</p>
+                    <img src="steak_frites.jpg" alt="Steak frites">
+                    <p class="price">$18</p>
+                </li>
+                <li class="menu-item">
+                    <p>Filet de saumon</p>
+                    <img src="filet_saumon.jpg" alt="Filet de saumon">
+                    <p class="price">$16</p>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="menu" id="fruits_de_mer">
+            <ul>
+                <li class="menu-item">
+                    <p>Moules marinières</p>
+                    <img src="moules_marinieres.jpg" alt="Moules marinières">
+                    <p class="price">$14</p>
+                </li>
+                <li class="menu-item">
+                    <p>Plateau de fruits de mer</p>
+                    <img src="plateau_fruits_de_mer.jpg" alt="Plateau de fruits de mer">
+                    <p class="price">$25</p>
+                </li>
+                <li class="menu-item">
+                    <p>Paella</p>
+                    <img src="paella.jpg " >
+                    <p class="price">$20</p>
+                </li>
+                <li class="menu-item">
+                    <p>Crevettes grillées</p>
+                    <img src="crevettes_grillees.jpg" alt="Crevettes grillées">
+                    <p class="price">$16</p>
+                </li>
+                <li class="menu-item">
+                    <p>Calamars frits</p>
+                    <img src="calamars_frits.jpg" alt="Calamars frits">
+                    <p class="price">$12</p>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="menu" id="hamburgers">
+            <ul><li class="menu-item">
+                <p>Hamburger classique</p>
+                <img src="hamburger_classique.jpg" alt="Hamburger classique">
+                <p class="price">$8</p>
+            </li>
+            <li class="menu-item">
+                <p>Cheeseburger</p>
+                <img src="cheeseburger.jpg" alt="Cheeseburger">
+                <p class="price">$9</p>
+            </li>
+            <li class="menu-item">
+                <p>Burger végétarien</p>
+                <img src="burger_vegetarien.jpg" alt="Burger végétarien">
+                <p class="price">$10</p>
+            </li>
+            <li class="menu-item">
+                <p>Burger au poulet</p>
+                <img src="burger_poulet.jpg" alt="Burger au poulet">
+                <p class="price">$11</p>
+            </li>
+            <li class="menu-item">
+                <p>Burger au poisson</p>
+                <img src="burger_poisson.jpg" alt="Burger au poisson">
+                <p class="price">$12</p>
+            </li>
+            
+            </ul>
+        </div>
+        <div class="menu" id="pizzas">
+            <ul>
+              <li class="menu-item">
+    <p>Hamburger classique</p>
+    <img src="hamburger_classique.jpg" alt="Hamburger classique">
+    <p class="price">$8</p>
+</li>
+<li class="menu-item">
+    <p>Cheeseburger</p>
+    <img src="cheeseburger.jpg" alt="Cheeseburger">
+    <p class="price">$9</p>
+</li>
+<li class="menu-item">
+    <p>Burger végétarien</p>
+    <img src="burger_vegetarien.jpg" alt="Burger végétarien">
+    <p class="price">$10</p>
+</li>
+<li class="menu-item">
+    <p>Burger au poulet</p>
+    <img src="burger_poulet.jpg" alt="Burger au poulet">
+    <p class="price">$11</p>
+</li>
+<li class="menu-item">
+    <p>Burger au poisson</p>
+    <img src="burger_poisson.jpg" alt="Burger au poisson">
+    <p class="price">$12</p>
+</li>
+
+            </ul>
+        </div>
+        <div class="menu" id="desserts">
+            <ul>
+                <li class="menu-item">
+                    <p>Tiramisu</p>
+                    <img src="tiramisu.jpg" alt="Tiramisu">
+                    <p class="price">$6</p>
+                </li>
+                <li class="menu-item">
+                    <p>Cheesecake</p>
+                    <img src="cheesecake.jpg" alt="Cheesecake">
+                    <p class="price">$5</p>
+                </li>
+                <li class="menu-item">
+                    <p>Crème brûlée</p>
+                    <img src="creme_brulee.jpg" alt="Crème brûlée">
+                    <p class="price">$7</p>
+                </li>
+                <li class="menu-item">
+                    <p>Mousse au chocolat</p>
+                    <img src="mousse_chocolat.jpg" alt="Mousse au chocolat">
+                    <p class="price">$6</p>
+                </li>
+                <li class="menu-item">
+                    <p>Gâteau au fromage</p>
+                    <img src="gateau_fromage.jpg" alt="Gâteau au fromage">
+                    <p class="price">$8</p>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="menu" id="boissons">
+            <ul>
+                <li class="menu-item">
+                    <p>Eau minérale</p>
+                    <img src="eau_minerale.jpg" alt="Eau minérale">
+                    <p class="price">$2</p>
+                </li>
+                <li class="menu-item">
+                    <p>Jus d'orange frais</p>
+                    <img src="jus_orange.jpg" alt="Jus d'orange frais">
+                    <p class="price">$4</p>
+                </li>
+                <li class="menu-item">
+                    <p>Soda</p>
+                    <img src="soda.jpg" alt="Soda">
+                    <p class="price">$3</p>
+                </li>
+                <li class="menu-item">
+                    <p>Thé glacé</p>
+                    <img src="the_glace.jpg" alt="Thé glacé">
+                    <p class="price">$3</p>
+                </li>
+                <li class="menu-item">
+                    <p>Café</p>
+                    <img src="cafe.jpg" alt="Café">
+                    <p class="price">$2</p>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
